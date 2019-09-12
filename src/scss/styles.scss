@@ -1,5 +1,18 @@
-$bg-color: #f6f6f6;
+// Variable Overrides 
+$theme-colors: (
+  "primary": #0a82f3
+);
+
+// Bootstrap Sass Imports
+@import "node_modules/bootstrap/scss/bootstrap";
+
+
+
+$bg-color: #91b5d7;
 
 body {
     background-color: $bg-color;
 }
+
+
+/* Composite Form */
