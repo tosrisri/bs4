@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+  <title>BS4 - Cards</title>
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,800" />
+  <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="/css/bootstrap.css" />
+  <link rel="stylesheet" href="/css/styles.css" />
+  <style type="text/css">
+  h6 {
+    color: red;
+  }
+    .grid {
+      /* margin: 0 auto;
+      width: 1004px; */
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr; /* 1st col, 2nd col, 3rd col */
+      grid-template-rows: 100px 1fr 50px; /* 1st row, 2nd row, 3rd row */
+      grid-column-gap: 5px;
+      grid-row-gap: 5px;
+    }
+    .box, .b1 {
+      padding: 1rem;
+      border: 0px solid slateblue;
+      background-color: #222;
+      color: #ccc;
+    }
+
+    .grid1 {
+      display: grid;
+      grid-template-areas: 
+      "header header header"
+      "left body right"
+      "left body right"
+      "footer footer footer";
+    }
+    
+    .main-header {
+      grid-area: header;
+      background-color: yellow;
+    }
+    .left-nav {
+      grid-area: left;
+      background-color: blueviolet;
+    }
+    .main-body {
+      grid-area: body;
+      background-color: aqua;
+    }
+    .right-nav {
+      grid-area: right;
+      background-color: cadetblue;
+    }
+    .main-footer {
+      grid-area: footer;
+      background-color: blue;
+    }
+
+    /* twoColLayout styles */
+    #twoColLayout .grid {
+      display: grid;
+      grid-template-areas: 
+      "a b b"
+      "a b b"
+      "c c c";
+    }
+    #twoColLayout .grid .box1 {
+      grid-area: a;
+      background-color: aqua;
+    }
+    #twoColLayout .grid .box2 {
+      grid-area: b;
+      background-color:burlywood;
+    }
+    #twoColLayout .grid .box3 {
+      grid-area: c;
+      background-color:coral;
+    }
+
+  </style>
+</head>
+
+<body style="background-color:black;">
+  
+<div class="container">
+  <h4 class="text-primary text-center">Basic 3X3 Grid</h4>
+  <div class="grid mb-3">
+    <div class="box box1"><h6>Box 1</h6></div>
+    <div class="box box2"><h6>Box 2</h6></div>
+    <div class="box box3"><h6>Box 3</h6></div>
+    <div class="box box4"><h6>Box 4</h6></div>
+    <div class="box box5"><h6>Box 5</h6></div>
+    <div class="box box6"><h6>Box 6</h6></div>
+    <div class="box box7"><h6>Box 7</h6></div>
+    <div class="box box8"><h6>Box 8</h6></div>
+    <div class="box box9"><h6>Box 9</h6></div>
+  </div> 
+
+  <h4 class="text-primary text-center">3 Col Layout</h4>
+  <div class="grid1 mb-3">
+    <div class="b1 main-header"><h6>main-header</h6></div>
+    <div class="b1 left-nav"><h6>left-nav</h6></div>
+    <div class="b1 main-body"><h6>main-body</h6></div>
+    <div class="b1 right-nav"><h6>right-nav</h6></div>
+    <div class="b1 main-footer"><h6>main-footer</h6></div>
+  </div>
+
+  <h4 class="text-primary text-center">2 Col Layout</h4>
+  <div id="twoColLayout" class="mb-3">
+    <div class="grid">
+      <div class="box box1"><h6>Box 1</h6></div>
+      <div class="box box2"><h6>Box 2</h6></div>
+      <div class="box box3"><h6>Box 3</h6></div>
+    </div>
+  </div>
+
+</div>
+
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/popper.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+</body>
+
+</html>
